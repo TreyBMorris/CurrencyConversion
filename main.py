@@ -2,7 +2,8 @@ import requests
 import json
 
 # Where USD is the base currency you want to use
-url = 'https://v6.exchangerate-api.com/v6/27f5b0f6503e1523c08c00b6/latest/USD'
+API_CALL = 'e2f6b62536a5148392dc167a/latest/USD'
+url = ('https://v6.exchangerate-api.com/v6/' + API_CALL)
 
 # Making our request
 response = requests.get(url)
