@@ -1,5 +1,4 @@
 let jsonURL = 'main.json';
-
 let xhReq = new XMLHttpRequest();
 xhReq.open("GET", jsonURL, false);
 xhReq.send(null);
