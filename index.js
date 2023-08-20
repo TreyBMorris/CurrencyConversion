@@ -1,15 +1,14 @@
-let EUR;
 fetch('sample.json')
     .then(jsonData => jsonData.json())
     .then(data => setData(data))
 
-    let user_USD_To_Eur = (userInput) => {
+    
+console.log("TEST EURO: " + EUR)
+let user_USD_To_Eur = (userInput) => {
     //console.log("userNum:" + userInput);
     console.log("EURO: " + EUR);
     //document.getElementById("user_usd_euro").innerHTML = userInput + " USD is worth " + (userInput*EUR) +" Euros";
-    
 }
-console.log("TEST EURO: " + EUR)
 let setData = (data) => {
     USD_To_Eur(data.conversion_rates.USD,data.conversion_rates.EUR)
     EUR_To_USD(data.conversion_rates.EUR)
