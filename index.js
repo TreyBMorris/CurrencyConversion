@@ -1,24 +1,24 @@
-fetch('sample.json')
-    .then(jsonData => jsonData.json())
-    .then(data => setData(data))
+let jsonURL = 'sample.json';
 
-    
-console.log("TEST EURO: " + EUR)
-let user_USD_To_Eur = (userInput) => {
-    //console.log("userNum:" + userInput);
-    console.log("EURO: " + EUR);
-    //document.getElementById("user_usd_euro").innerHTML = userInput + " USD is worth " + (userInput*EUR) +" Euros";
-}
-let setData = (data) => {
-    USD_To_Eur(data.conversion_rates.USD,data.conversion_rates.EUR)
-    EUR_To_USD(data.conversion_rates.EUR)
-    document.getElementById("last_update").innerHTML = data.time_last_update_utc;
-}
+let xhReq = new XMLHttpRequest();
+xhReq.open("GET", jsonURL, false);
+xhReq.send(null);
+let jsonObject = JSON.parse(xhReq.responseText);
+let EUR = jsonObject.conversion_rates.EUR;
+let USD = jsonObject.conversion_rates.USD;
+let time_last_update_utc = jsonObject.time_last_update_utc;
+console.log(jsonObject.result);
+console.log(EUR);
+console.log(USD);
 
 
-let USD_To_Eur = (USD,EUR) => {
-    document.getElementById("usd_to_euro").innerHTML = USD + " USD is worth " + EUR +" Euros";
+function onClick(){
+    var numberInput = document.getElementById('userNum').value;
+    console.log(numberInput);
+    document.getElementById('user_usd_euro').innerHTML = numberInput + " USD is worth " + (numberInput*EUR) + " EUR.";
 }
-let EUR_To_USD = (EUR) => { 
-    document.getElementById("euro_to_usd").innerHTML ="1 EUR is worth " + (1/EUR) +" USD";
-}
+
+
+document.getElementById('last_update').innerHTML = time_last_update_utc;
+document.getElementById('usd_to_euro').innerHTML = USD + " USD is worth " + EUR + " Euros.";
+document.getElementById('euro_to_usd').innerHTML = "1 EUR is worth " + (1/EUR) + " USD.";
