@@ -1,4 +1,4 @@
-let jsonURL = 'sample.json';
+let jsonURL = 'main.json';
 
 let xhReq = new XMLHttpRequest();
 xhReq.open("GET", jsonURL, false);
