@@ -17,7 +17,7 @@ let setData = (data) => {
 let USD_To_Eur = (USD,EUR) => {
     console.log("USD:" + USD);
     document.getElementById("usd_to_euro").innerHTML = USD + " USD is worth " + EUR +" Euros";
-    document.getElementById("two_usd_to_euro").innerHTML = (2*USD) + " USD is worth " + (2*EUR) +" Euros";
+    
 
 }
 let EUR_To_USD = (EUR) => {
