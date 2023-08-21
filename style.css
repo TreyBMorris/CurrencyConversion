@@ -31,3 +31,6 @@ input[type=number] {
     box-sizing: border-box;
     border: 1px solid #555;
 }
+#user_response{
+    font-size: 20px;
+}

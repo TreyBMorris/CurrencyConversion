@@ -14,13 +14,13 @@ let responseText = document.querySelector('#currency_select');
 
 function onClick(){
     let numberInput = document.getElementById('userNum').value;
-    document.getElementById('user_usd_euro').innerHTML = numberInput + " USD is worth " + (numberInput*EUR) + " EUR.";
     convertAmount(numberInput,responseText.value);
 
 }
 
 function convertAmount(numberInput,value){
     let convertTo = jsonObject.conversion_rates[value];
+    document.getElementById('user_response').innerHTML = numberInput + " USD is worth " + (numberInput*convertTo) + " " + value;
     console.log(numberInput,value,convertTo);
 }
 
