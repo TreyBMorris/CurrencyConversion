@@ -24,4 +24,6 @@ function setTimeLastUpdate(){
     document.getElementById('last_update').innerHTML = time_last_update_utc;
 }
 
+
+
 setTimeLastUpdate();
