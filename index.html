@@ -19,15 +19,18 @@
         <center><div id="euro_to_usd"><p>Text here</p></div></center>
 
         <center><h3>User Amount of USD to EUR</h3></center>
-        
-        
-        <center><input type="number" id="userNum"></center>
-        <center><button class="button" onclick="onClick()">Submit</button></center>
-        <br>
-
         <center><div id="user_usd_euro"></div></center>
         
-        
+        <center><input type="number" id="userNum"></center>
+        <center>
+        <select name = "currency_select" id = "currency_select">
+            <option value = "USD">USD</option>
+            <option value = "EUR">EUR</option>
+            <option value = "AUD">AUD</option>
+            <option value = "GBP">GBP</option>
+        </select>
+        <button class="button" onclick="onClick()">Submit</button>
+        </center>
         <br>
         
         <footer>
