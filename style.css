@@ -1,17 +1,26 @@
 .header {
     background: #e1e1e1;
     padding: 20px 0;
-    height: 40px;
+    height: 20px;
     font-size: 40px;
     text-align: center;
 }
-
+.sub_header {
+    background: #e1e1e1;
+    padding: 20px 0;
+    height: 10px;
+    font-size: 16px;
+    text-align: center;
+}
 footer {
     background: #666;
     color: black;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 10px;
     height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .button {
     background-color: #555555;
@@ -33,4 +42,18 @@ input[type=number] {
 }
 #user_response{
     font-size: 20px;
+}
+#currency_select{
+    background-color: #555555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        max-height: 150px; 
+        overflow-x: hidden; 
+        overflow-y: auto; 
+            
 }
