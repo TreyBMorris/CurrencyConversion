@@ -4,8 +4,10 @@ xhReq.open("GET", jsonURL, false);
 xhReq.send(null);
 let jsonObject = JSON.parse(xhReq.responseText);
 
+
 let time_last_update_utc = jsonObject.time_last_update_utc;
 let responseText = document.querySelector('#currency_select');
+
 
 
 function onClick(){
