@@ -9,8 +9,6 @@ let USD = jsonObject.conversion_rates.USD;
 let AUD = jsonObject.conversion_rates.AUD.toFixed(2);
 let time_last_update_utc = jsonObject.time_last_update_utc;
 
-console.log(jsonObject.result);
-
 
 function onClick(){
     let numberInput = document.getElementById('userNum').value;
@@ -28,7 +26,6 @@ function usdToEuro(){
 function eurToUsd(){
     document.getElementById('euro_to_usd').innerHTML = "1 EUR is worth " + (1/EUR + " USD.");
 }
-
 
 setTimeLastUpdate();
 usdToEuro();
