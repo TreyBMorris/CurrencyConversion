@@ -21,14 +21,13 @@ footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px;
 }
 input[type=number] {
     text-align: center;
-    width: 100%;
-    padding: 12px 20px;
+    width: 25%;
+    padding: 12px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 1px solid #555;
-    outline: none;
 }
