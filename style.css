@@ -75,4 +75,5 @@ input[type=number] {
     max-height: 125px; 
     overflow-x: hidden; 
     overflow-y: auto; 
+    -webkit-appearance: none;
 }
