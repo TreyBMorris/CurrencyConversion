@@ -5,7 +5,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 nav {
-    background: #FFC300;
+    background: #048c2c;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@ nav a:hover{
     color: #fff;
 }
 .logo {
-    background: #FFC300;
+    background: #048c2c;
     color: #000;
     font-weight: bold;
     font-style: italic;
@@ -35,10 +35,9 @@ nav a:hover{
     padding-left: 80px;
 }
 .footerBottom {
-    background: #FFC300;
+    background: #048c2c;
     color: black;
     font-size: 16px;
-
     height: 40px;
     position: fixed;
     bottom: 0;
@@ -46,9 +45,8 @@ nav a:hover{
 }
 .button {
     background-color: #555555;
-    border: none;
     color: white;
-    padding: 15px 30px;
+    padding: 16px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -67,7 +65,7 @@ input[type=number] {
 #currency_select{
     background-color: #555555;
     color: white;
-    padding: 16px 2px;
+    padding: 16px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
