@@ -15,7 +15,7 @@ nav {
 nav a {
     text-decoration: none;
     color: #000;
-    padding: 0 1.5rem;
+    padding: 0 0.25rem;
 }
 nav a:hover{
     color: #fff;
@@ -30,7 +30,7 @@ nav a:hover{
 }
 .main-container {
     padding-top: 100px;
-    padding-right: 30px;
+    padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
 }
@@ -48,7 +48,7 @@ nav a:hover{
     background-color: #555555;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -60,21 +60,19 @@ input[type=number] {
     padding: 12px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid #555;
 }
 #user_response{
     font-size: 20px;
 }
 #currency_select{
     background-color: #555555;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 12px;
-        max-height: 150px; 
-        overflow-x: hidden; 
-        overflow-y: auto; 
+    color: white;
+    padding: 16px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    max-height: 125px; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
