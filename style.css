@@ -76,3 +76,16 @@ input[type=number] {
     overflow-y: auto; 
     -webkit-appearance: none;
 }
+#currency_from {
+    background-color: #555555;
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    max-height: 125px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-appearance: none;
+}
