@@ -28,8 +28,6 @@ function convertAmounttoUSD(numberInput,value){
 function convertAmount(numberInput,valueFrom,valueTo) {
     let convertTo = jsonObject.conversion_rates[valueFrom];
     document.getElementById('user_response').innerHTML = numberInput + " "+ valueFrom + " is worth " + (numberInput/convertTo) + " " + valueTo;
-
-    console.log(convertTo);
 }
 
 
