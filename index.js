@@ -30,8 +30,6 @@ function convertAmount(numberInput,valueFrom,valueTo) {
     document.getElementById('user_response').innerHTML = numberInput + " "+ valueFrom + " is worth " + (numberInput/convertTo) + " " + valueTo;
 }
 
-
-
 function setTimeLastUpdate(){
     document.getElementById('last_update').innerHTML = time_last_update_utc;
 }
