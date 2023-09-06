@@ -2,6 +2,7 @@
 <head>
 <title>Ca-Ching!</title>
 <link rel="stylesheet" href="./style.css">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 </head>
@@ -23,6 +24,7 @@
             <div id="user_response">Convert Currency</div>
             <input type="number" id="userNum">
             <br>
+            <div id ="convertFromTitle">Convert From</div>
             <select name = "currency_from" id = "currency_from">
                 <option value = "USD">USD - United States Dollar</option>
                 <option value="EUR">EUR - Euro</option>
@@ -78,6 +80,8 @@
                 <option value="ZAR">ZAR - South African Rand</option>
                 <option value="ZWL">ZWL - Zimbabwean Dollar</option>
             </select>
+            
+            <div id="convertToTitle">Convert To</div>
             <select name="currency_select" id="currency_select">
                 <option value="USD">USD - United States Dollar</option>
                 <option value="EUR">EUR - Euro</option>
@@ -133,7 +137,9 @@
                 <option value="ZAR">ZAR - South African Rand</option>
                 <option value="ZWL">ZWL - Zimbabwean Dollar</option>
             </select>
-            <button class="button" onclick="onClick()">Submit</button>
+            <br>
+            <br>
+            <button class="button" onclick="onClick()">Convert</button>
         </div>
         </center>
     </section>
